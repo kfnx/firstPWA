@@ -1,17 +1,24 @@
-const CACHE_NAME = "firstpwa-v01";
+const CACHE_NAME = "kucingku-v2";
 var urlsToCache = [
   "/",
   "/nav.html",
   "/index.html",
-  "/icon.png",
   "/pages/home.html",
   "/pages/about.html",
-  "/pages/contact.html",
+  "/pages/bengal.html",
+  "/pages/munchkin.html",
+  "/pages/sphynx.html",
   "/css/materialize.min.css",
   "/js/materialize.min.js",
-  "/js/nav.js"
+  "/js/nav.js",
+  "/images/avatar-kafin.jpg",
+  "/images/bengal.jpg",
+  "/images/munchkin.jpg",
+  "/images/sphynx.jpg",
+  "/images/icon.jpg",
+  "/images/favicon.png"
 ];
- 
+
 self.addEventListener("install", function(event) {
   event.waitUntil(
     caches.open(CACHE_NAME).then(function(cache) {
@@ -29,7 +36,7 @@ self.addEventListener("fetch", function(event) {
           console.log("ServiceWorker: Gunakan aset dari cache: ", response.url);
           return response;
         }
- 
+
         console.log(
           "ServiceWorker: Memuat aset dari server: ",
           event.request.url

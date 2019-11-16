@@ -1,1 +1,0 @@
-app shell using materialize and following tutorial at dicoding academy
