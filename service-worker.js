@@ -9,6 +9,7 @@ var urlsToCache = [
   "/pages/munchkin.html",
   "/pages/sphynx.html",
   "/css/materialize.min.css",
+  "/css/style.css",
   "/js/materialize.min.js",
   "/js/nav.js",
   "/images/avatar-kafin.jpg",
@@ -16,7 +17,8 @@ var urlsToCache = [
   "/images/munchkin.jpg",
   "/images/sphynx.jpg",
   "/images/icon.jpg",
-  "/images/favicon.png"
+  "/images/favicon.png",
+  "/manifest.json"
 ];
 
 self.addEventListener("install", function(event) {

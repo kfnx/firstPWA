@@ -45,13 +45,13 @@ body {
   margin: 32px auto;
 }
 .bengal {
-  background-image: url(images/bengal.jpg);
+  background-image: url(../images/bengal.jpg);
 }
 .munchkin {
-  background-image: url(images/munchkin.jpg);
+  background-image: url(../images/munchkin.jpg);
 }
 .sphynx {
-  background-image: url(images/sphynx.jpg);
+  background-image: url(../images/sphynx.jpg);
 }
 
 /* About */
@@ -67,5 +67,5 @@ body {
   font-size: 2.2rem;
 }
 .kafin {
-  background-image: url(images/avatar-kafin.jpg);
+  background-image: url(../images/avatar-kafin.jpg);
 }
