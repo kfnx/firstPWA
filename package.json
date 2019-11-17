@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/kafinsalim/firstPWA/issues"
   },
-  "homepage": "https://github.com/kafinsalim/firstPWA#readme"
+  "homepage": "https://github.com/kafinsalim/firstPWA#readme",
+  "dependencies": {
+    "idb": "^2.1.3"
+  }
 }

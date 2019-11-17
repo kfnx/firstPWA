@@ -1,3 +1,4 @@
+console.log("main js loaded");
 document.addEventListener("DOMContentLoaded", function() {
   // Activate sidebar nav
   var elems = document.querySelectorAll(".sidenav");
@@ -47,6 +48,21 @@ document.addEventListener("DOMContentLoaded", function() {
   var page = window.location.hash.substr(1);
   if (page == "") page = "home";
   loadPage(page);
+
+  // dynamic hide and show footer
+  var isScroll = false;
+  window.addEventListener("scroll", function(e) {
+    isScroll = true;
+    console.log(isScroll);
+    document.getElementsByClassName("footer-copyright")[0].style.display =
+      "none";
+    setTimeout(function() {
+      isScroll = false;
+      console.log(isScroll);
+      document.getElementsByClassName("footer-copyright")[0].style.display =
+        "block";
+    }, 250);
+  });
 });
 
 function loadPage(page) {
@@ -57,6 +73,8 @@ function loadPage(page) {
       var content = document.querySelector("#body-content");
       if (this.status == 200) {
         content.innerHTML = xhttp.responseText;
+        // fetch news for articles
+        if (page === "news") getArticles();
       } else if (this.status == 404) {
         content.innerHTML = "<p>Halaman tidak ditemukan.</p>";
       } else {

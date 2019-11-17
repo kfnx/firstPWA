@@ -9,6 +9,7 @@ body {
 #body-content {
   padding: 3vh 10vw;
   text-align: center;
+  margin-bottom: 50px;
 }
 .footer-copyright {
   width: 100%;
@@ -16,6 +17,7 @@ body {
   position: fixed;
   bottom: 0;
   padding: 12px;
+  z-index: 5;
 }
 .footer-text {
   border-radius: 4px;
