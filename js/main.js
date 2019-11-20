@@ -1,4 +1,9 @@
 console.log("main js loaded");
+if ("location" in window) {
+  console.log(`path loaded in : ${window.location.href}`);
+} else {
+  console.log("invalid path");
+}
 document.addEventListener("DOMContentLoaded", function() {
   // Activate sidebar nav
   var elems = document.querySelectorAll(".sidenav");

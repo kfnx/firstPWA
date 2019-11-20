@@ -1,0 +1,81 @@
+<a href="#home" onclick="loadPage('home')" style="font-size: 1.25rem;"
+  >🔙 kembali ke 🏠</a
+>
+<div class="row">
+  <h5>CRUD IndexedDB</h5>
+  <div class="row">
+    <div class="input-field col s7">
+      Add New Item:
+      <input placeholder="Item Name" id="item" type="text" class="validate" />
+    </div>
+    <div class="input-field col s5">
+      <a
+        onclick="M.toast({html: 'item added'})"
+        class="btn-floating btn-large waves-effect waves-light light-green"
+        >➕</a
+      >
+    </div>
+  </div>
+  <div class="row">
+    <table>
+      <thead>
+        <tr>
+          <th>Key</th>
+          <th>Name</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Alvin</td>
+          <td>Eclair</td>
+          <td>
+            <a
+              onclick="M.toast({html: 'item edited'})"
+              class="btn waves-effect waves-light light-green"
+              >✏️</a
+            >
+            <a
+              onclick="M.toast({html: 'item removed'})"
+              class="btn waves-effect waves-light red lighten-1"
+              >🗑️</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Alan</td>
+          <td>Jellybean</td>
+          <td>
+            <a
+              onclick="M.toast({html: 'item edited'})"
+              class="btn waves-effect waves-light light-green"
+              >✏️</a
+            >
+            <a
+              onclick="M.toast({html: 'item removed'})"
+              class="btn waves-effect waves-light red lighten-1"
+              >🗑️</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Jonathan</td>
+          <td>Lollipop</td>
+          <td>
+            <a
+              onclick="M.toast({html: 'item edited'})"
+              class="btn waves-effect waves-light light-green"
+              >✏️</a
+            >
+            <a
+              onclick="M.toast({html: 'item removed'})"
+              class="btn waves-effect waves-light red lighten-1"
+              >🗑️</a
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
