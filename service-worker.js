@@ -1,28 +1,29 @@
-var CACHE_NAME = "kucingku-v3.1";
+var root_path = 'https://kafinsalim.github.io/firstPWA'
+var CACHE_NAME = "kucingku-v3.2";
 console.warn("sw: loaded with CACHE_NAME[" + CACHE_NAME + "]");
 var urlsToCache = [
-  "/",
-  "/nav.html",
-  "/index.html",
-  "/article.html",
-  "/pages/home.html",
-  "/pages/about.html",
-  "/pages/bengal.html",
-  "/pages/munchkin.html",
-  "/pages/sphynx.html",
-  "/pages/news.html",
-  "/css/materialize.min.css",
-  "/css/style.css",
-  "/js/materialize.min.js",
-  "/js/main.js",
-  "/js/newsApi.js",
-  "/images/avatar-kafin.jpg",
-  "/images/bengal.jpg",
-  "/images/munchkin.jpg",
-  "/images/sphynx.jpg",
-  "/images/icon-192.jpg",
-  "/images/favicon.png",
-  "/manifest.json"
+  root_path+"/",
+  root_path+"/nav.html",
+  root_path+"/index.html",
+  root_path+"/article.html",
+  root_path+"/pages/home.html",
+  root_path+"/pages/about.html",
+  root_path+"/pages/bengal.html",
+  root_path+"/pages/munchkin.html",
+  root_path+"/pages/sphynx.html",
+  root_path+"/pages/news.html",
+  root_path+"/css/materialize.min.css",
+  root_path+"/css/style.css",
+  root_path+"/js/materialize.min.js",
+  root_path+"/js/main.js",
+  root_path+"/js/newsApi.js",
+  root_path+"/images/avatar-kafin.jpg",
+  root_path+"/images/bengal.jpg",
+  root_path+"/images/munchkin.jpg",
+  root_path+"/images/sphynx.jpg",
+  root_path+"/images/icon-192.jpg",
+  root_path+"/images/favicon.png",
+  root_path+"/manifest.json"
 ];
 
 self.addEventListener("install", function(event) {
